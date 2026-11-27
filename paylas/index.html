@@ -53,6 +53,7 @@ ol{padding-left:20px;margin:6px 0}
     <li>Görseli ya da videoyu <b>İndir</b> düğmesiyle telefona kaydet. Birden çok görsel varsa sırayla seç (kaydırmalı gönderi).</li>
     <li>Her platformun metnini <b>Kopyala</b> ile alıp yapıştır. Videolarda YouTube ve TikTok başlıklarını da ayrıca kopyala.</li>
     <li>Hikâye anketinde kartı hikâyeye koy, anket çıkartmasını ekle, soruyu ve şıkları yaz.</li>
+    <li>Sayfa her açılışta bugünün gönderilerini gösterir. Başka bir güne ◀ ▶ düğmeleriyle ya da listeden geçebilirsin.</li>
     <li>Saatler UK saatidir; yanında Bakü saati var.</li>
     <li>Paylaştıktan sonra Claude'a "paylaştım" yaz (Claude açık olmasa da sonra yazabilirsin). Claude o gönderiyi işaretler ve Metricool'a bir daha girmez.</li>
   </ol>
@@ -83,7 +84,9 @@ function badge(p){if(p.posted)return '<span class="badge b-ok">✓ Paylaşıldı
 let DATA=[],idx=0;
 function render(){N=0;const e=DATA[idx];const out=document.getElementById('out');
  document.getElementById('pick').value=idx;
- if(!e){out.innerHTML='<div class="none">Bu gün için gönderi yok.</div>';return}
+ if(!e||!e.posts.length){const nx=DATA.findIndex((x,i)=>i>idx&&x.posts.length);
+  out.innerHTML=`<div class="none">${e&&e.date===TODAY?'Bugün':'Bu gün'} paylaşılacak gönderi yok.</div>`+(nx>=0?`<button class="copy" id="gonext">Sıradaki gönderi: ${nice(DATA[nx].date)}</button>`:'');
+  const b=document.getElementById('gonext');if(b)b.onclick=()=>{idx=nx;render()};return}
  let h='';
  e.posts.forEach(p=>{const bk=baku(e.date,p.time);
   h+=`<div class="card${p.posted?' done-card':''}"><h2>${esc(p.title)} ${badge(p)}</h2>
@@ -99,16 +102,27 @@ function render(){N=0;const e=DATA[idx];const out=document.getElementById('out')
    try{await navigator.clipboard.writeText(txt)}catch(_){const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges()}
    b.textContent='Kopyalandı ✓';b.classList.add('done');setTimeout(()=>{b.textContent='Kopyala';b.classList.remove('done')},1800)});
 }
-fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{DATA=d;const now=new Date();const today=ukDate(now);
- document.getElementById('now').textContent='UK saati: '+nice(today)+' '+ukTime(now)+' · Hazır gönderiler '+nice(DATA[DATA.length-1].date)+' tarihine kadar';
+// Bugün = telefonun/bilgisayarın kendi tarihi (Bakü'de gece yarısından sonra da doğru gün açılır).
+function localDate(d){return new Intl.DateTimeFormat('en-CA',{year:'numeric',month:'2-digit',day:'2-digit'}).format(d)}
+function addDay(iso,n){const [y,m,d]=iso.split('-').map(Number);return new Date(Date.UTC(y,m-1,d+n)).toISOString().slice(0,10)}
+let TODAY='',RAW=[];
+function build(){const now=new Date();TODAY=localDate(now);
+ const by={};RAW.forEach(x=>by[x.date]=x);
+ const first=RAW.length?RAW[0].date:TODAY,last=RAW.length?RAW[RAW.length-1].date:TODAY;
+ let a=first<TODAY?first:TODAY;const b=last>TODAY?last:TODAY;DATA=[];
+ while(a<=b){DATA.push(by[a]||{date:a,posts:[]});a=addDay(a,1)}
+ document.getElementById('now').textContent='Bugün: '+nice(TODAY)+' · UK saati '+ukTime(now)+' · Hazır gönderiler '+nice(last)+' tarihine kadar';
  const sel=document.getElementById('pick');
- sel.innerHTML=DATA.map((x,i)=>{const all=x.posts.every(p=>p.posted||p.status==='metricool');return `<option value="${i}">${nice(x.date)}${x.date===today?' (bugün)':''}${all?' ✓':''}</option>`}).join('');
- idx=DATA.findIndex(x=>x.date>=today);if(idx<0)idx=DATA.length-1;
- render();
- if(DATA[idx].date!==today)document.getElementById('out').insertAdjacentHTML('afterbegin',`<div class="warn">Bugün (${nice(today)}) gönderi yok. Sıradaki gün gösteriliyor.</div>`);
+ sel.innerHTML=DATA.map((x,i)=>{const all=x.posts.length&&x.posts.every(p=>p.posted||p.status==='metricool');return `<option value="${i}">${nice(x.date)}${x.date===TODAY?' (bugün)':''}${!x.posts.length?' · gönderi yok':all?' ✓':''}</option>`}).join('');
+ idx=DATA.findIndex(x=>x.date===TODAY);if(idx<0)idx=DATA.length-1;
+ render()}
+fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{RAW=d.slice().sort((a,b)=>a.date<b.date?-1:1);build();
+ const sel=document.getElementById('pick');
  sel.onchange=()=>{idx=+sel.value;render()};
  document.getElementById('prev').onclick=()=>{if(idx>0){idx--;render()}};
  document.getElementById('next').onclick=()=>{if(idx<DATA.length-1){idx++;render()}};
+ // Sayfa açık kalırsa ve gün değişirse yeni günü göster
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden&&localDate(new Date())!==TODAY)build()});
 }).catch(()=>{document.getElementById('out').innerHTML='<div class="none">Liste yüklenemedi. Sayfayı yenile.</div>'});
 </script>
 </body>
