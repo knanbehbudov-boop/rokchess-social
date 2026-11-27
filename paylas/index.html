@@ -33,6 +33,12 @@ video{width:100%;max-height:60vh;border-radius:12px;background:#000}
 .b-elle{background:var(--warn)}.b-mc{background:#2b5d8c}.b-ok{background:var(--ok)}.b-wait{background:#555}
 .done-card{opacity:.6}
 .none{color:var(--mut);text-align:center;padding:30px 0}
+.plan{background:#2a2414;border:2px solid var(--gold);border-radius:14px;padding:12px 14px;margin:12px 0}
+.plan-h{font-weight:700;color:var(--gold);margin-bottom:6px}
+.plan-r{display:flex;flex-direction:column;gap:1px;padding:6px 0;border-top:1px solid #3a3220}
+.plan-r:first-of-type{border-top:0}
+.plan-r b{font-size:17px}
+.plan-r span{color:var(--txt);font-size:14px}
 ol{padding-left:20px;margin:6px 0}
 </style>
 </head>
@@ -55,6 +61,7 @@ ol{padding-left:20px;margin:6px 0}
     <li>Hikâye anketinde kartı hikâyeye koy, anket çıkartmasını ekle, soruyu ve şıkları yaz.</li>
     <li>Sayfa her açılışta bugünün gönderilerini gösterir. Başka bir güne ◀ ▶ düğmeleriyle ya da listeden geçebilirsin.</li>
     <li>Saatler UK saatidir; yanında Bakü saati var.</li>
+    <li>Her akşam paylaşım saatinden önce telefonuna hatırlatma gelir.</li>
     <li>Paylaştıktan sonra Claude'a "paylaştım" yaz (Claude açık olmasa da sonra yazabilirsin). Claude o gönderiyi işaretler ve Metricool'a bir daha girmez.</li>
   </ol>
 </div>
@@ -88,6 +95,12 @@ function render(){N=0;const e=DATA[idx];const out=document.getElementById('out')
   out.innerHTML=`<div class="none">${e&&e.date===TODAY?'Bugün':'Bu gün'} paylaşılacak gönderi yok.</div>`+(nx>=0?`<button class="copy" id="gonext">Sıradaki gönderi: ${nice(DATA[nx].date)}</button>`:'');
   const b=document.getElementById('gonext');if(b)b.onclick=()=>{idx=nx;render()};return}
  let h='';
+ // Özet: bu gün Kanan'ın elle paylaşacakları, saat sırasıyla
+ const mine=e.posts.filter(p=>p.status==='elle'&&!p.posted).slice().sort((a,b)=>(/^\d/.test(a.time)?a.time:'99')<(/^\d/.test(b.time)?b.time:'99')?-1:1);
+ const isToday=e.date===TODAY;
+ h+=`<div class="plan"><div class="plan-h">${isToday?'Bugün paylaşacakların':'Bu gün paylaşacakların'}</div>`+
+  (mine.length?mine.map(p=>`<div class="plan-r"><b>${/^\d/.test(p.time)?esc(p.time)+' UK · '+baku(e.date,p.time)+' Bakü':'Gün içinde'}</b><span>${esc(p.title)} — ${esc(p.platforms.join(', '))}</span></div>`).join('')
+   :`<div class="plan-r"><span>${e.posts.some(p=>p.status==='metricool'&&!p.posted)?'Senin paylaşacağın gönderi yok. Bugünküler Metricool\'da planlı, kendiliğinden çıkacak.':'Senin paylaşacağın gönderi kalmadı.'}</span></div>`)+`</div>`;
  e.posts.forEach(p=>{const bk=baku(e.date,p.time);
   h+=`<div class="card${p.posted?' done-card':''}"><h2>${esc(p.title)} ${badge(p)}</h2>
    <div class="time">${/^\d/.test(p.time)?esc(p.time)+' UK · '+bk+' Bakü':'Gün içinde, istediğin saatte'}</div>
