@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Rokchess Paylaşım Paketi</title>
+<style>
+:root{--bg:#161512;--card:#211f1b;--line:#3a3631;--txt:#f4f1ea;--mut:#a39d90;--gold:#c9a227;--ok:#2e9e5b;--warn:#d4462e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.45 -apple-system,system-ui,Segoe UI,Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:16px}
+h1{font-size:22px;margin:4px 0 2px}
+h1 span{color:var(--gold)}
+.sub{color:var(--mut);font-size:14px;margin-bottom:12px}
+.nav{display:flex;gap:8px;align-items:center;margin:10px 0 14px}
+.nav button,.nav select{background:var(--card);color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:15px}
+.nav select{flex:1;min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:12px 0}
+.card h2{font-size:17px;margin:0 0 4px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:baseline}
+.time{color:var(--gold);font-size:14px;font-weight:600}
+.plat{color:var(--mut);font-size:13px;margin-bottom:6px}
+.lbl{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.04em;margin:12px 0 4px}
+pre{white-space:pre-wrap;word-wrap:break-word;background:#191815;border:1px solid var(--line);border-radius:10px;padding:10px;margin:0;font:14px/1.45 inherit;font-family:inherit}
+.copy{margin-top:6px;background:var(--gold);color:#161512;border:0;border-radius:10px;padding:10px 14px;font-size:15px;font-weight:600;width:100%}
+.copy.done{background:var(--ok);color:#fff}
+video{width:100%;max-height:60vh;border-radius:12px;background:#000}
+.imgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
+.imgs img{width:100%;border-radius:10px;display:block}
+.dl{display:block;text-align:center;margin-top:8px;background:#fff;color:#161512;text-decoration:none;border-radius:10px;padding:11px;font-weight:600}
+.warn{background:#3a2a00;border:1px solid #6b5000;color:#ffd77a;border-radius:10px;padding:10px;margin:10px 0;font-size:14px}
+.badge{font-size:12px;border-radius:6px;padding:2px 8px;color:#fff;white-space:nowrap}
+.b-elle{background:var(--warn)}.b-mc{background:#2b5d8c}.b-ok{background:var(--ok)}.b-wait{background:#555}
+.done-card{opacity:.6}
+.none{color:var(--mut);text-align:center;padding:30px 0}
+ol{padding-left:20px;margin:6px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>Rokchess <span>Paylaşım Paketi</span></h1>
+<div class="sub" id="now"></div>
+<div class="nav">
+  <button id="prev" aria-label="Önceki gün">◀</button>
+  <select id="pick" aria-label="Gün seç"></select>
+  <button id="next" aria-label="Sonraki gün">▶</button>
+</div>
+<div id="out"></div>
+<div class="card">
+  <h2>Nasıl kullanılır</h2>
+  <ol>
+    <li>Kırmızı <b>"Sen paylaş"</b> etiketli gönderileri sen paylaşırsın. Mavi <b>"Metricool'da planlı"</b> olanlar kendiliğinden çıkar, dokunma.</li>
+    <li>Görseli ya da videoyu <b>İndir</b> düğmesiyle telefona kaydet. Birden çok görsel varsa sırayla seç (kaydırmalı gönderi).</li>
+    <li>Her platformun metnini <b>Kopyala</b> ile alıp yapıştır. Videolarda YouTube ve TikTok başlıklarını da ayrıca kopyala.</li>
+    <li>Hikâye anketinde kartı hikâyeye koy, anket çıkartmasını ekle, soruyu ve şıkları yaz.</li>
+    <li>Saatler UK saatidir; yanında Bakü saati var.</li>
+    <li>Paylaştıktan sonra Claude'a "paylaştım" yaz (Claude açık olmasa da sonra yazabilirsin). Claude o gönderiyi işaretler ve Metricool'a bir daha girmez.</li>
+  </ol>
+</div>
+</main>
+<script>
+const TZ='Europe/London';
+function ukDate(d){return new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(d)}
+function ukTime(d){return new Intl.DateTimeFormat('tr-TR',{timeZone:TZ,hour:'2-digit',minute:'2-digit'}).format(d)}
+const TR_DAYS=['Pazar','Pazartesi','Salı','Çarşamba','Perşembe','Cuma','Cumartesi'];
+const TR_MON=['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'];
+function nice(iso){const [y,m,d]=iso.split('-').map(Number);const w=new Date(Date.UTC(y,m-1,d)).getUTCDay();return d+' '+TR_MON[m-1]+' '+TR_DAYS[w]}
+// Bakü = UK + 4 saat (kış), UK yaz saatinde (29 Mart 2027 sonrası) + 3
+function baku(iso,t){if(!/^\d\d:\d\d$/.test(t))return '';const dst=iso>='2027-03-28'&&iso<'2027-10-31';const [h,m]=t.split(':').map(Number);return String((h+(dst?3:4))%24).padStart(2,'0')+':'+String(m).padStart(2,'0')}
+function esc(s){return String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+let N=0;
+function block(label,text){if(!text)return '';const id='t'+(N++);
+ return `<div class="lbl">${esc(label)}</div><pre id="${id}">${esc(text)}</pre><button class="copy" data-t="${id}">Kopyala</button>`}
+function media(list){if(!list||!list.length)return '';
+ const vids=list.filter(u=>/\.mp4$/i.test(u)), imgs=list.filter(u=>!/\.mp4$/i.test(u));let h='';
+ vids.forEach(u=>{h+=`<video src="${esc(u)}" controls playsinline preload="metadata"></video><a class="dl" href="${esc(u)}" download="${esc(u.split('/').pop())}">⬇ Videoyu indir</a>`});
+ if(imgs.length){h+=`<div class="imgs">`+imgs.map((u,i)=>`<div><img src="${esc(u)}" alt="Görsel ${i+1}" loading="lazy"><a class="dl" href="${esc(u)}" download="${esc(u.split('/').pop())}">⬇ ${imgs.length>1?(i+1)+'. görseli':'Görseli'} indir</a></div>`).join('')+`</div>`}
+ return h}
+function badge(p){if(p.posted)return '<span class="badge b-ok">✓ Paylaşıldı</span>';
+ if(p.status==='metricool')return '<span class="badge b-mc">Metricool\'da planlı</span>';
+ if(p.status==='hazirlaniyor')return '<span class="badge b-wait">Hazırlanıyor</span>';
+ return '<span class="badge b-elle">Sen paylaş</span>'}
+let DATA=[],idx=0;
+function render(){N=0;const e=DATA[idx];const out=document.getElementById('out');
+ document.getElementById('pick').value=idx;
+ if(!e){out.innerHTML='<div class="none">Bu gün için gönderi yok.</div>';return}
+ let h='';
+ e.posts.forEach(p=>{const bk=baku(e.date,p.time);
+  h+=`<div class="card${p.posted?' done-card':''}"><h2>${esc(p.title)} ${badge(p)}</h2>
+   <div class="time">${/^\d/.test(p.time)?esc(p.time)+' UK · '+bk+' Bakü':'Gün içinde, istediğin saatte'}</div>
+   <div class="plat">${esc(p.platforms.join(' · '))}</div>`;
+  if(p.status==='hazirlaniyor'){h+=`<div class="lbl">Claude hazırlıyor; hazır olunca burada çıkar.</div></div>`;return}
+  h+=media(p.media);
+  if(p.poll)h+=block('Anket sorusu',p.poll.q)+`<div class="lbl">Şıklar</div><ol>${p.poll.opts.map(o=>`<li>${esc(o)}</li>`).join('')}</ol>`;
+  (p.parts||[]).forEach(x=>{h+=block(x.label,x.text)});
+  h+=`</div>`});
+ out.innerHTML=h;
+ out.querySelectorAll('.copy').forEach(b=>b.onclick=async()=>{const el=document.getElementById(b.dataset.t);const txt=el.textContent;
+   try{await navigator.clipboard.writeText(txt)}catch(_){const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges()}
+   b.textContent='Kopyalandı ✓';b.classList.add('done');setTimeout(()=>{b.textContent='Kopyala';b.classList.remove('done')},1800)});
+}
+fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{DATA=d;const now=new Date();const today=ukDate(now);
+ document.getElementById('now').textContent='UK saati: '+nice(today)+' '+ukTime(now)+' · Hazır gönderiler '+nice(DATA[DATA.length-1].date)+' tarihine kadar';
+ const sel=document.getElementById('pick');
+ sel.innerHTML=DATA.map((x,i)=>{const all=x.posts.every(p=>p.posted||p.status==='metricool');return `<option value="${i}">${nice(x.date)}${x.date===today?' (bugün)':''}${all?' ✓':''}</option>`}).join('');
+ idx=DATA.findIndex(x=>x.date>=today);if(idx<0)idx=DATA.length-1;
+ render();
+ if(DATA[idx].date!==today)document.getElementById('out').insertAdjacentHTML('afterbegin',`<div class="warn">Bugün (${nice(today)}) gönderi yok. Sıradaki gün gösteriliyor.</div>`);
+ sel.onchange=()=>{idx=+sel.value;render()};
+ document.getElementById('prev').onclick=()=>{if(idx>0){idx--;render()}};
+ document.getElementById('next').onclick=()=>{if(idx<DATA.length-1){idx++;render()}};
+}).catch(()=>{document.getElementById('out').innerHTML='<div class="none">Liste yüklenemedi. Sayfayı yenile.</div>'});
+</script>
+</body>
+</html>
