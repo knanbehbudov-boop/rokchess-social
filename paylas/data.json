@@ -257,17 +257,31 @@
   "date": "2026-12-02",
   "posts": [
    {
-    "id": "2026-12-02-anlatim",
-    "title": "Fair play at Rokchess",
+    "id": "2026-12-02-1",
+    "title": "Anlatım: Fair play",
     "time": "18:30",
-    "status": "hazirlaniyor",
+    "status": "elle",
     "posted": false,
     "platforms": [
      "Instagram",
      "Threads"
     ],
-    "media": [],
-    "parts": []
+    "media": [
+     "../2026-12/aralik/E1-1.png",
+     "../2026-12/aralik/E1-2.png",
+     "../2026-12/aralik/E1-3.png",
+     "../2026-12/aralik/E1-4.png"
+    ],
+    "parts": [
+     {
+      "label": "Instagram",
+      "text": "Fair play comes first. 🛡️\n\nWe use fair-play detection.\nFlagged games are reviewed by people, not just software,\nand you can appeal a decision within 7 days.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#fairplay #chess #onlinechess #chesscommunity"
+     },
+     {
+      "label": "Threads",
+      "text": "Fair play comes first. 🛡️\n\nWe use fair-play detection.\nFlagged games are reviewed by people, not just software,\nand you can appeal a decision within 7 days.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess"
+     }
+    ]
    }
   ]
  },
@@ -319,17 +333,29 @@
   "date": "2026-12-04",
   "posts": [
    {
-    "id": "2026-12-04-bulmaca",
+    "id": "2026-12-04-1",
     "title": "Haftanın bulmacası",
     "time": "18:30",
-    "status": "hazirlaniyor",
+    "status": "elle",
     "posted": false,
     "platforms": [
      "Instagram",
      "Threads"
     ],
-    "media": [],
-    "parts": []
+    "media": [
+     "../2026-12/aralik/B5-1.png",
+     "../2026-12/aralik/B5-2.png"
+    ],
+    "parts": [
+     {
+      "label": "Instagram",
+      "text": "Puzzle of the week ♟️\n\nWhite to play and mate in 2 (Lichess puzzle rating ~1900).\nSwipe for a hint. Drop your answer in the comments.\nSolution on Monday.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chesspuzzle #matein2 #chesstactics #chess"
+     },
+     {
+      "label": "Threads",
+      "text": "Puzzle of the week ♟️\n\nWhite to play and mate in 2 (Lichess puzzle rating ~1900).\nSwipe for a hint. Drop your answer in the replies.\nSolution on Monday.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess"
+     }
+    ]
    }
   ]
  },
@@ -358,6 +384,1146 @@
      {
       "label": "YouTube başlığı",
       "text": "Mate in 2 solution: rook sacrifice"
+     },
+     {
+      "label": "TikTok başlığı",
+      "text": "Mate in 2: the solution"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-06",
+  "posts": [
+   {
+    "id": "2026-12-06-1",
+    "title": "Hikâye anketi",
+    "time": "gün içinde",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram hikâye"
+    ],
+    "media": [
+     "../2026-11/anketler2/A06-06Ara.png"
+    ],
+    "parts": [],
+    "poll": {
+     "q": "Which site do you play on most?",
+     "opts": [
+      "Chess.com",
+      "Lichess",
+      "Other"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-12-07",
+  "posts": [
+   {
+    "id": "2026-12-07-1",
+    "title": "Bulmaca çözümü",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram",
+     "Threads"
+    ],
+    "media": [
+     "../2026-12/aralik/B5-3.png",
+     "../2026-12/aralik/B5-4.png"
+    ],
+    "parts": [
+     {
+      "label": "Instagram",
+      "text": "Solution to Friday's puzzle: 1. Qg8+ Rxg8 2. Nf7#.\n\nThe b3 bishop guards g8, so only the rook can take. Then the king is boxed in by its own pieces, and Nf7 is smothered mate.\nDid you spot it?\n\nNew puzzle every Friday.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chesspuzzle #matein2 #chesstactics #chess"
+     },
+     {
+      "label": "Threads",
+      "text": "Solution to Friday's puzzle: 1. Qg8+ Rxg8 2. Nf7#.\n\nThe b3 bishop guards g8, so only the rook can take. Then the king is boxed in by its own pieces, and Nf7 is smothered mate.\nDid you spot it?\n\nNew puzzle every Friday.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-08",
+  "posts": [
+   {
+    "id": "2026-12-08-2",
+    "title": "Hikâye anketi",
+    "time": "gün içinde",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram hikâye"
+    ],
+    "media": [
+     "../2026-11/anketler2/A07-08Ara.png"
+    ],
+    "parts": [],
+    "poll": {
+     "q": "Thinking about online chess tournaments in general, what entry fee would feel fair?",
+     "opts": [
+      "Under £10",
+      "£10–£20",
+      "Over £20"
+     ]
+    }
+   },
+   {
+    "id": "2026-12-08-1",
+    "title": "Bulmaca videosu: 2 hamlede mat",
+    "time": "19:00",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "TikTok",
+     "YouTube Shorts",
+     "Instagram Reels"
+    ],
+    "media": [
+     "../2026-12/video/B6-soru.mp4"
+    ],
+    "parts": [
+     {
+      "label": "Açıklama (üçünde aynı)",
+      "text": "Mate in 2 (Lichess puzzle rating ~2000). Can you find it before the timer ends? ♟️\nComment your first move. Solution on Saturday.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n#chesspuzzle #matein2 #chess #chesstok"
+     },
+     {
+      "label": "YouTube başlığı",
+      "text": "Mate in 2 puzzle (rated ~2000): can you find it?"
+     },
+     {
+      "label": "TikTok başlığı",
+      "text": "Mate in 2: can you find it?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-09",
+  "posts": [
+   {
+    "id": "2026-12-09-1",
+    "title": "Anlatım: 3+2 ne demek",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram",
+     "Threads"
+    ],
+    "media": [
+     "../2026-12/aralik/E2-1.png",
+     "../2026-12/aralik/E2-2.png",
+     "../2026-12/aralik/E2-3.png",
+     "../2026-12/aralik/E2-4.png"
+    ],
+    "parts": [
+     {
+      "label": "Instagram",
+      "text": "What does 3+2 mean? ⏱️\n\n3 = minutes on each player's clock.\n+2 = seconds added after every move you make.\n\nWhich do you prefer: 3+0, 3+2 or 5+3? Tell us in the comments.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess #blitz #chesstips #onlinechess"
+     },
+     {
+      "label": "Threads",
+      "text": "What does 3+2 mean? ⏱️\n\n3 = minutes on each player's clock.\n+2 = seconds added after every move you make.\n\nWhich do you prefer: 3+0, 3+2 or 5+3? Tell us in the replies.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-10",
+  "posts": [
+   {
+    "id": "2026-12-10-1",
+    "title": "Hikâye anketi",
+    "time": "gün içinde",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram hikâye"
+    ],
+    "media": [
+     "../2026-11/anketler2/A08-10Ara.png"
+    ],
+    "parts": [],
+    "poll": {
+     "q": "What matters most before joining an online chess tournament?",
+     "opts": [
+      "Fair-play checks",
+      "Entry cost",
+      "Payment options",
+      "Time"
+     ]
+    }
+   },
+   {
+    "id": "2026-12-10-2",
+    "title": "Threads sorusu",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Threads"
+    ],
+    "media": [],
+    "parts": [
+     {
+      "label": "Threads",
+      "text": "What puts you off entering a new online tournament? Be brutally honest. (18+)\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-11",
+  "posts": [
+   {
+    "id": "2026-12-11-1",
+    "title": "Haftanın bulmacası",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram",
+     "Threads"
+    ],
+    "media": [
+     "../2026-12/aralik/B7-1.png",
+     "../2026-12/aralik/B7-2.png"
+    ],
+    "parts": [
+     {
+      "label": "Instagram",
+      "text": "Puzzle of the week ♟️\n\nWhite to play and mate in 2 (Lichess puzzle rating ~1900).\nSwipe for a hint. Drop your answer in the comments.\nSolution on Monday.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chesspuzzle #matein2 #chesstactics #chess"
+     },
+     {
+      "label": "Threads",
+      "text": "Puzzle of the week ♟️\n\nWhite to play and mate in 2 (Lichess puzzle rating ~1900).\nSwipe for a hint. Drop your answer in the replies.\nSolution on Monday.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-12",
+  "posts": [
+   {
+    "id": "2026-12-12-1",
+    "title": "Bulmaca çözüm videosu",
+    "time": "19:00",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "TikTok",
+     "YouTube Shorts",
+     "Instagram Reels"
+    ],
+    "media": [
+     "../2026-12/video/B6-cozum.mp4"
+    ],
+    "parts": [
+     {
+      "label": "Açıklama (üçünde aynı)",
+      "text": "Solution to Tuesday's puzzle: 1. Rxg6+ hxg6 2. Qg7#. The rook sacrifice opens g7. Whichever pawn takes, Qg7 is mate, because the h6 bishop protects the queen. Follow for harder puzzles.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n#chesspuzzle #matein2 #chess"
+     },
+     {
+      "label": "YouTube başlığı",
+      "text": "Mate in 2 solution: rook sacrifice"
+     },
+     {
+      "label": "TikTok başlığı",
+      "text": "Mate in 2: the solution"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-13",
+  "posts": [
+   {
+    "id": "2026-12-13-1",
+    "title": "Hikâye: Cuma bulmacasını paylaş",
+    "time": "gün içinde",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram hikâye"
+    ],
+    "media": [],
+    "parts": [
+     {
+      "label": "Nasıl",
+      "text": "Instagram'da Cuma günü paylaşılan bulmaca gönderisini aç, kâğıt uçağa bas, \"Hikâyene ekle\" de ve paylaş."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-14",
+  "posts": [
+   {
+    "id": "2026-12-14-1",
+    "title": "Bulmaca çözümü",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram",
+     "Threads"
+    ],
+    "media": [
+     "../2026-12/aralik/B7-3.png",
+     "../2026-12/aralik/B7-4.png"
+    ],
+    "parts": [
+     {
+      "label": "Instagram",
+      "text": "Solution to Friday's puzzle: 1. Qxe6+ Rxe6 2. Rf8#.\n\nQxe6+ forces Rxe6 and empties the back rank. Rf8 is mate, because the h6 bishop guards f8 and g7.\nDid you spot it?\n\nNew puzzle every Friday.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chesspuzzle #matein2 #chesstactics #chess"
+     },
+     {
+      "label": "Threads",
+      "text": "Solution to Friday's puzzle: 1. Qxe6+ Rxe6 2. Rf8#.\n\nQxe6+ forces Rxe6 and empties the back rank. Rf8 is mate, because the h6 bishop guards f8 and g7.\nDid you spot it?\n\nNew puzzle every Friday.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-15",
+  "posts": [
+   {
+    "id": "2026-12-15-2",
+    "title": "Hikâye anketi",
+    "time": "gün içinde",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram hikâye"
+    ],
+    "media": [
+     "../2026-11/anketler2/A09-15Ara.png"
+    ],
+    "parts": [],
+    "poll": {
+     "q": "Which payment method do you prefer online?",
+     "opts": [
+      "Card",
+      "PayPal",
+      "Other"
+     ]
+    }
+   },
+   {
+    "id": "2026-12-15-1",
+    "title": "Bulmaca videosu: 2 hamlede mat",
+    "time": "19:00",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "TikTok",
+     "YouTube Shorts",
+     "Instagram Reels"
+    ],
+    "media": [
+     "../2026-12/video/B8-soru.mp4"
+    ],
+    "parts": [
+     {
+      "label": "Açıklama (üçünde aynı)",
+      "text": "Mate in 2 (Lichess puzzle rating ~1900). Can you find it before the timer ends? ♟️\nComment your first move. Solution on Saturday.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n#chesspuzzle #matein2 #chess #chesstok"
+     },
+     {
+      "label": "YouTube başlığı",
+      "text": "Mate in 2 puzzle (rated ~1900): can you find it?"
+     },
+     {
+      "label": "TikTok başlığı",
+      "text": "Mate in 2: can you find it?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-16",
+  "posts": [
+   {
+    "id": "2026-12-16-1",
+    "title": "Anlatım: Blitz'te daha az hata",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram",
+     "Threads"
+    ],
+    "media": [
+     "../2026-12/aralik/E3-1.png",
+     "../2026-12/aralik/E3-2.png",
+     "../2026-12/aralik/E3-3.png",
+     "../2026-12/aralik/E3-4.png"
+    ],
+    "parts": [
+     {
+      "label": "Instagram",
+      "text": "Blunder less in blitz ♟️\n\nBefore every move, ask three quick questions:\n1️⃣ Checks: can they give check?\n2️⃣ Captures: can they take something for free?\n3️⃣ Threats: what does their last move attack?\n\nSave this for your next game.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chesstips #chess #blitzchess #chessimprovement"
+     },
+     {
+      "label": "Threads",
+      "text": "Blunder less in blitz ♟️\n\nBefore every move, ask three quick questions:\n1️⃣ Checks: can they give check?\n2️⃣ Captures: can they take something for free?\n3️⃣ Threats: what does their last move attack?\n\nSave this for your next game.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-17",
+  "posts": [
+   {
+    "id": "2026-12-17-1",
+    "title": "Hikâye anketi (iki parça)",
+    "time": "gün içinde",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram hikâye"
+    ],
+    "media": [
+     "../2026-11/anketler2/A10a-17Ara.png",
+     "../2026-11/anketler2/A10b-17Ara.png"
+    ],
+    "parts": [],
+    "poll": {
+     "q": "What matters most to you?",
+     "opts": [
+      "1. kart: Fair-play checks / Clearly published prizes",
+      "2. kart: Instant results / Something else"
+     ]
+    }
+   },
+   {
+    "id": "2026-12-17-2",
+    "title": "Threads sorusu",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Threads"
+    ],
+    "media": [],
+    "parts": [
+     {
+      "label": "Threads",
+      "text": "Which mistake costs you the most games: hanging a piece, running out of time, or missing a mate? (18+)\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-18",
+  "posts": [
+   {
+    "id": "2026-12-18-1",
+    "title": "Haftanın bulmacası",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram",
+     "Threads"
+    ],
+    "media": [
+     "../2026-12/aralik/B9-1.png",
+     "../2026-12/aralik/B9-2.png"
+    ],
+    "parts": [
+     {
+      "label": "Instagram",
+      "text": "Puzzle of the week ♟️\n\nWhite to play and mate in 2 (Lichess puzzle rating ~2000).\nSwipe for a hint. Drop your answer in the comments.\nSolution on Monday.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chesspuzzle #matein2 #chesstactics #chess"
+     },
+     {
+      "label": "Threads",
+      "text": "Puzzle of the week ♟️\n\nWhite to play and mate in 2 (Lichess puzzle rating ~2000).\nSwipe for a hint. Drop your answer in the replies.\nSolution on Monday.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-19",
+  "posts": [
+   {
+    "id": "2026-12-19-1",
+    "title": "Bulmaca çözüm videosu",
+    "time": "19:00",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "TikTok",
+     "YouTube Shorts",
+     "Instagram Reels"
+    ],
+    "media": [
+     "../2026-12/video/B8-cozum.mp4"
+    ],
+    "parts": [
+     {
+      "label": "Açıklama (üçünde aynı)",
+      "text": "Solution to Tuesday's puzzle: 1. Rxg8+ Rxg8 2. Rxg8#. The f6 knight guards g8 and h7, so after the rook trade the second rook mates. This is the Arabian mate. Follow for harder puzzles.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n#chesspuzzle #matein2 #chess"
+     },
+     {
+      "label": "YouTube başlığı",
+      "text": "Mate in 2 solution: Arabian mate"
+     },
+     {
+      "label": "TikTok başlığı",
+      "text": "Mate in 2: the solution"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-20",
+  "posts": [
+   {
+    "id": "2026-12-20-1",
+    "title": "Hikâye anketi",
+    "time": "gün içinde",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram hikâye"
+    ],
+    "media": [
+     "../2026-12/aralik/A11-20Ara.png"
+    ],
+    "parts": [],
+    "poll": {
+     "q": "Which do you enjoy most?",
+     "opts": [
+      "Bullet",
+      "Blitz",
+      "Rapid"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-12-21",
+  "posts": [
+   {
+    "id": "2026-12-21-1",
+    "title": "Bulmaca çözümü",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram",
+     "Threads"
+    ],
+    "media": [
+     "../2026-12/aralik/B9-3.png",
+     "../2026-12/aralik/B9-4.png"
+    ],
+    "parts": [
+     {
+      "label": "Instagram",
+      "text": "Solution to Friday's puzzle: 1. Qxa7+ Kxa7 2. Ra5#.\n\nThe rooks hold the b-file, so the king must take the queen. Ra5 is mate, because the b1 rook covers b6, b7 and b8.\nDid you spot it?\n\nNew puzzle every Friday.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chesspuzzle #matein2 #chesstactics #chess"
+     },
+     {
+      "label": "Threads",
+      "text": "Solution to Friday's puzzle: 1. Qxa7+ Kxa7 2. Ra5#.\n\nThe rooks hold the b-file, so the king must take the queen. Ra5 is mate, because the b1 rook covers b6, b7 and b8.\nDid you spot it?\n\nNew puzzle every Friday.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-22",
+  "posts": [
+   {
+    "id": "2026-12-22-2",
+    "title": "Hikâye: bugünkü videoyu paylaş",
+    "time": "gün içinde",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram hikâye"
+    ],
+    "media": [],
+    "parts": [
+     {
+      "label": "Nasıl",
+      "text": "Instagram'da bugünkü gönderiyi aç, kâğıt uçağa bas, \"Hikâyene ekle\" de ve paylaş."
+     }
+    ]
+   },
+   {
+    "id": "2026-12-22-1",
+    "title": "Bulmaca videosu: 2 hamlede mat",
+    "time": "19:00",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "TikTok",
+     "YouTube Shorts",
+     "Instagram Reels"
+    ],
+    "media": [
+     "../2026-12/video/B10-soru.mp4"
+    ],
+    "parts": [
+     {
+      "label": "Açıklama (üçünde aynı)",
+      "text": "Mate in 2 (Lichess puzzle rating ~1900). Can you find it before the timer ends? ♟️\nComment your first move. Solution on Saturday.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n#chesspuzzle #matein2 #chess #chesstok"
+     },
+     {
+      "label": "YouTube başlığı",
+      "text": "Mate in 2 puzzle (rated ~1900): can you find it?"
+     },
+     {
+      "label": "TikTok başlığı",
+      "text": "Mate in 2: can you find it?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-23",
+  "posts": [
+   {
+    "id": "2026-12-23-1",
+    "title": "Anlatım: Bilinmesi gereken 3 mat",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram",
+     "Threads"
+    ],
+    "media": [
+     "../2026-12/aralik/E4-1.png",
+     "../2026-12/aralik/E4-2.png",
+     "../2026-12/aralik/E4-3.png",
+     "../2026-12/aralik/E4-4.png"
+    ],
+    "parts": [
+     {
+      "label": "Instagram",
+      "text": "Three mates every player should know ♟️\n\n1️⃣ Back-rank mate: the king's own pawns block its escape.\n2️⃣ Smothered mate: a knight mates a king boxed in by its own pieces.\n3️⃣ Arabian mate: rook and knight team up in the corner.\n\nWhich one have you played?\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess #checkmate #chesstactics #chesspatterns"
+     },
+     {
+      "label": "Threads",
+      "text": "Three mates every player should know ♟️\n\n1️⃣ Back-rank mate: the king's own pawns block its escape.\n2️⃣ Smothered mate: a knight mates a king boxed in by its own pieces.\n3️⃣ Arabian mate: rook and knight team up in the corner.\n\nWhich one have you played?\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-24",
+  "posts": [
+   {
+    "id": "2026-12-24-1",
+    "title": "Hikâye anketi",
+    "time": "gün içinde",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram hikâye"
+    ],
+    "media": [
+     "../2026-12/aralik/A12-24Ara.png"
+    ],
+    "parts": [],
+    "poll": {
+     "q": "Do you play over the board too?",
+     "opts": [
+      "Yes, at a club",
+      "Sometimes",
+      "Online only"
+     ]
+    }
+   },
+   {
+    "id": "2026-12-24-2",
+    "title": "Threads sorusu",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Threads"
+    ],
+    "media": [],
+    "parts": [
+     {
+      "label": "Threads",
+      "text": "Best chess gift you've ever been given? A board, a book, a clock, or something else? (18+)\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-25",
+  "posts": [
+   {
+    "id": "2026-12-25-1",
+    "title": "Haftanın bulmacası",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram",
+     "Threads"
+    ],
+    "media": [
+     "../2026-12/aralik/B11-1.png",
+     "../2026-12/aralik/B11-2.png"
+    ],
+    "parts": [
+     {
+      "label": "Instagram",
+      "text": "Puzzle of the week ♟️\n\nWhite to play and mate in 2 (Lichess puzzle rating ~2100).\nSwipe for a hint. Drop your answer in the comments.\nSolution on Monday.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chesspuzzle #matein2 #chesstactics #chess"
+     },
+     {
+      "label": "Threads",
+      "text": "Puzzle of the week ♟️\n\nWhite to play and mate in 2 (Lichess puzzle rating ~2100).\nSwipe for a hint. Drop your answer in the replies.\nSolution on Monday.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-26",
+  "posts": [
+   {
+    "id": "2026-12-26-1",
+    "title": "Bulmaca çözüm videosu",
+    "time": "19:00",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "TikTok",
+     "YouTube Shorts",
+     "Instagram Reels"
+    ],
+    "media": [
+     "../2026-12/video/B10-cozum.mp4"
+    ],
+    "parts": [
+     {
+      "label": "Açıklama (üçünde aynı)",
+      "text": "Solution to Tuesday's puzzle: 1. Nc7+ Kf8 2. Nxe6#. Nc7+ is a double check from the knight and the a4 bishop, so the king must move. Nxe6 is mate, and the f7 pawn cannot take back because the f1 rook pins it. Follow for harder puzzles.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n#chesspuzzle #matein2 #chess"
+     },
+     {
+      "label": "YouTube başlığı",
+      "text": "Mate in 2 solution: double check"
+     },
+     {
+      "label": "TikTok başlığı",
+      "text": "Mate in 2: the solution"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-27",
+  "posts": [
+   {
+    "id": "2026-12-27-1",
+    "title": "Hikâye anketi",
+    "time": "gün içinde",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram hikâye"
+    ],
+    "media": [
+     "../2026-12/aralik/A13-27Ara.png"
+    ],
+    "parts": [],
+    "poll": {
+     "q": "How do you train?",
+     "opts": [
+      "Puzzles",
+      "Videos",
+      "Just play"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "date": "2026-12-28",
+  "posts": [
+   {
+    "id": "2026-12-28-1",
+    "title": "Bulmaca çözümü",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram",
+     "Threads"
+    ],
+    "media": [
+     "../2026-12/aralik/B11-3.png",
+     "../2026-12/aralik/B11-4.png"
+    ],
+    "parts": [
+     {
+      "label": "Instagram",
+      "text": "Solution to Friday's puzzle: 1. Nc4+ Ke6 2. d5#.\n\nThe a7 rook holds the seventh rank, so the king must go to e6. Then d5 is mate: the knight covers d6 and e5, and the e4 pawn guards d5 and f5.\nDid you spot it?\n\nNew puzzle every Friday.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chesspuzzle #matein2 #chesstactics #chess"
+     },
+     {
+      "label": "Threads",
+      "text": "Solution to Friday's puzzle: 1. Nc4+ Ke6 2. d5#.\n\nThe a7 rook holds the seventh rank, so the king must go to e6. Then d5 is mate: the knight covers d6 and e5, and the e4 pawn guards d5 and f5.\nDid you spot it?\n\nNew puzzle every Friday.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-29",
+  "posts": [
+   {
+    "id": "2026-12-29-2",
+    "title": "Hikâye: bugünkü videoyu paylaş",
+    "time": "gün içinde",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram hikâye"
+    ],
+    "media": [],
+    "parts": [
+     {
+      "label": "Nasıl",
+      "text": "Instagram'da bugünkü gönderiyi aç, kâğıt uçağa bas, \"Hikâyene ekle\" de ve paylaş."
+     }
+    ]
+   },
+   {
+    "id": "2026-12-29-1",
+    "title": "Bulmaca videosu: 2 hamlede mat",
+    "time": "19:00",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "TikTok",
+     "YouTube Shorts",
+     "Instagram Reels"
+    ],
+    "media": [
+     "../2026-12/video/B12-soru.mp4"
+    ],
+    "parts": [
+     {
+      "label": "Açıklama (üçünde aynı)",
+      "text": "Mate in 2 (Lichess puzzle rating ~2100). Can you find it before the timer ends? ♟️\nComment your first move. Solution on Saturday.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n#chesspuzzle #matein2 #chess #chesstok"
+     },
+     {
+      "label": "YouTube başlığı",
+      "text": "Mate in 2 puzzle (rated ~2100): can you find it?"
+     },
+     {
+      "label": "TikTok başlığı",
+      "text": "Mate in 2: can you find it?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-30",
+  "posts": [
+   {
+    "id": "2026-12-30-1",
+    "title": "Anlatım: 2027 için 3 alışkanlık",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram",
+     "Threads"
+    ],
+    "media": [
+     "../2026-12/aralik/E5-1.png",
+     "../2026-12/aralik/E5-2.png",
+     "../2026-12/aralik/E5-3.png",
+     "../2026-12/aralik/E5-4.png"
+    ],
+    "parts": [
+     {
+      "label": "Instagram",
+      "text": "Three chess habits for 2027 ♟️\n\n1️⃣ One puzzle a day.\n2️⃣ Review your losses: find the move where it went wrong.\n3️⃣ Play some longer games.\n\nWhich one are you starting?\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess #chessimprovement #newyear #chesstips"
+     },
+     {
+      "label": "Threads",
+      "text": "Three chess habits for 2027 ♟️\n\n1️⃣ One puzzle a day.\n2️⃣ Review your losses: find the move where it went wrong.\n3️⃣ Play some longer games.\n\nWhich one are you starting?\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-12-31",
+  "posts": [
+   {
+    "id": "2026-12-31-1",
+    "title": "Hikâye anketi",
+    "time": "gün içinde",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram hikâye"
+    ],
+    "media": [
+     "../2026-12/aralik/A14-31Ara.png"
+    ],
+    "parts": [],
+    "poll": {
+     "q": "Your chess goal for 2027?",
+     "opts": [
+      "Higher rating",
+      "Play more",
+      "Learn openings"
+     ]
+    }
+   },
+   {
+    "id": "2026-12-31-2",
+    "title": "Threads sorusu",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Threads"
+    ],
+    "media": [],
+    "parts": [
+     {
+      "label": "Threads",
+      "text": "One chess goal for 2027. What's yours? (18+)\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2027-01-01",
+  "posts": [
+   {
+    "id": "2027-01-01-1",
+    "title": "Haftanın bulmacası",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram",
+     "Threads"
+    ],
+    "media": [
+     "../2026-12/aralik/B13-1.png",
+     "../2026-12/aralik/B13-2.png"
+    ],
+    "parts": [
+     {
+      "label": "Instagram",
+      "text": "Puzzle of the week ♟️\n\nWhite to play and mate in 2 (Lichess puzzle rating ~2100).\nSwipe for a hint. Drop your answer in the comments.\nSolution on Monday.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chesspuzzle #matein2 #chesstactics #chess"
+     },
+     {
+      "label": "Threads",
+      "text": "Puzzle of the week ♟️\n\nWhite to play and mate in 2 (Lichess puzzle rating ~2100).\nSwipe for a hint. Drop your answer in the replies.\nSolution on Monday.\n\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2027-01-02",
+  "posts": [
+   {
+    "id": "2027-01-02-1",
+    "title": "Bulmaca çözüm videosu",
+    "time": "19:00",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "TikTok",
+     "YouTube Shorts",
+     "Instagram Reels"
+    ],
+    "media": [
+     "../2026-12/video/B12-cozum.mp4"
+    ],
+    "parts": [
+     {
+      "label": "Açıklama (üçünde aynı)",
+      "text": "Solution to Tuesday's puzzle: 1. Qe8+ Kh7 2. Qh8#. Qe8+ drives the king to h7, and Qh8 is mate because the c3 bishop guards h8 along the long diagonal. Follow for harder puzzles.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n#chesspuzzle #matein2 #chess"
+     },
+     {
+      "label": "YouTube başlığı",
+      "text": "Mate in 2 solution: long diagonal"
+     },
+     {
+      "label": "TikTok başlığı",
+      "text": "Mate in 2: the solution"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2027-01-03",
+  "posts": [
+   {
+    "id": "2027-01-03-1",
+    "title": "Hikâye anketi",
+    "time": "gün içinde",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram hikâye"
+    ],
+    "media": [
+     "../2026-12/aralik/A15-03Oca.png"
+    ],
+    "parts": [],
+    "poll": {
+     "q": "How hard should our puzzles be?",
+     "opts": [
+      "Harder",
+      "Same level",
+      "Easier"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "date": "2027-01-04",
+  "posts": [
+   {
+    "id": "2027-01-04-1",
+    "title": "Bulmaca çözümü",
+    "time": "18:30",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram",
+     "Threads"
+    ],
+    "media": [
+     "../2026-12/aralik/B13-3.png",
+     "../2026-12/aralik/B13-4.png"
+    ],
+    "parts": [
+     {
+      "label": "Instagram",
+      "text": "Solution to Friday's puzzle: 1. b3+ axb3 2. Bd3#.\n\nBd3+ at once lets the king escape to b3. After b3+ axb3, Black's own pawn sits on b3, and Bd3 is mate.\nDid you spot it?\n\nNew puzzle every Friday.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chesspuzzle #matein2 #chesstactics #chess"
+     },
+     {
+      "label": "Threads",
+      "text": "Solution to Friday's puzzle: 1. b3+ axb3 2. Bd3#.\n\nBd3+ at once lets the king escape to b3. After b3+ axb3, Black's own pawn sits on b3, and Bd3 is mate.\nDid you spot it?\n\nNew puzzle every Friday.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n\n#chess"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2027-01-05",
+  "posts": [
+   {
+    "id": "2027-01-05-2",
+    "title": "Hikâye: bugünkü videoyu paylaş",
+    "time": "gün içinde",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "Instagram hikâye"
+    ],
+    "media": [],
+    "parts": [
+     {
+      "label": "Nasıl",
+      "text": "Instagram'da bugünkü gönderiyi aç, kâğıt uçağa bas, \"Hikâyene ekle\" de ve paylaş."
+     }
+    ]
+   },
+   {
+    "id": "2027-01-05-1",
+    "title": "Bulmaca videosu: 2 hamlede mat",
+    "time": "19:00",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "TikTok",
+     "YouTube Shorts",
+     "Instagram Reels"
+    ],
+    "media": [
+     "../2026-12/video/B14-soru.mp4"
+    ],
+    "parts": [
+     {
+      "label": "Açıklama (üçünde aynı)",
+      "text": "Mate in 2 (Lichess puzzle rating ~1900). Can you find it before the timer ends? ♟️\nComment your first move. Solution on Saturday.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n#chesspuzzle #matein2 #chess #chesstok"
+     },
+     {
+      "label": "YouTube başlığı",
+      "text": "Mate in 2 puzzle (rated ~1900): can you find it?"
+     },
+     {
+      "label": "TikTok başlığı",
+      "text": "Mate in 2: can you find it?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2027-01-09",
+  "posts": [
+   {
+    "id": "2027-01-09-1",
+    "title": "Bulmaca çözüm videosu",
+    "time": "19:00",
+    "status": "elle",
+    "posted": false,
+    "platforms": [
+     "TikTok",
+     "YouTube Shorts",
+     "Instagram Reels"
+    ],
+    "media": [
+     "../2026-12/video/B14-cozum.mp4"
+    ],
+    "parts": [
+     {
+      "label": "Açıklama (üçünde aynı)",
+      "text": "Solution to Tuesday's puzzle: 1. Rf5+ Kh8 2. Rf8#. Moving the rook uncovers a check from the e6 bishop. After Kh8, Rf8 is back-rank mate, and the bishop covers g8. Follow for harder puzzles.\n18+ | Rokchess: knockout chess tournaments for adults. Paid tournaments are not yet open.\n#chesspuzzle #matein2 #chess"
+     },
+     {
+      "label": "YouTube başlığı",
+      "text": "Mate in 2 solution: discovered check"
      },
      {
       "label": "TikTok başlığı",
